@@ -15,10 +15,13 @@ namespace AutomotiveGauges
     {
         public int HighestReachedValue { get; private set; }
 
-        public Accelerometer(int maxValue) : base(maxValue, 0)
-        {
-
-        }
+        public Accelerometer(int maxValue) : base(maxValue, 0) { }
+        
+        // Q: perhaps I should just embrace the dependency because you can't change the value without it.
+        // public Accelerometer(ISpeedChangeable vehicle, int maxValue) : base(maxValue, 0)
+        // {
+        //     vehicle.OnSpeedChanged += OnValueChanged;
+        // }
         
         public void SetHighestReachedValueIfHigher(int value)
         {

@@ -6,9 +6,7 @@ namespace AutomotiveGauges
     // 2) Tachometer, indicating a minimum and maximum value, as well as a suggested "do not exceed" value ("redline")
     public class Tachometer : GageWithWarning
     {
-        public Tachometer(int maxValue, int warningValue, int minValue = 0) : base(maxValue, warningValue, minValue)
-        {
-        }
+        public Tachometer(int maxValue, int warningValue, int minValue = 0) : base(maxValue, warningValue, minValue) { }
 
         protected override void OnValueChanged(object sender, ValueChangedEventArgs args)
         {

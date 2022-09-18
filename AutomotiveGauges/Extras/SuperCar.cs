@@ -14,6 +14,13 @@ public class SuperCar : ISpeedChangeable, IAmperesChangeable, IOilPressureChange
 
     public SuperCar()
     {
+        // If I embraced the dependency
+        // this.Accelerometer = new Accelerometer(this, 300);
+        // this.Ammeter = new Ammeter(this, 200);
+        // this.OilPressureGage = new OilPressureGage(this, 500);
+        // this.Speedometer = new Speedometer(this, 300);
+        // this.Tachometer = new Tachometer(this, 100000, 70000);
+        
         this.Accelerometer = new Accelerometer(300);
         this.Accelerometer.SubscribeToSpeedChanges(this);
 
