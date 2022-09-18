@@ -37,4 +37,22 @@ public class SuperCarTests
         car.Accelerometer.CurrentValue.Should().Be(50);
         car.Accelerometer.HighestReachedValue.Should().Be(100);
     }
+
+    [TestMethod]
+    public void CarResetAccelerometer()
+    {
+        // Arrange
+        var car = new SuperCar();
+        car.Accelerometer.CurrentValue.Should().Be(0);
+
+        // Act
+        car.ChangeSpeed(100);
+        car.Accelerometer.CurrentValue.Should().Be(100);
+        car.Accelerometer.HighestReachedValue.Should().Be(100);
+        car.ChangeSpeed(0);
+        car.Accelerometer.ResetHighestReachedValue();
+
+        // Assert
+        car.Accelerometer.HighestReachedValue.Should().Be(0);
+    }
 }
