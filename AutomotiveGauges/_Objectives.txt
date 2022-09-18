@@ -1,0 +1,16 @@
+Objective: Design the underlying functionality for an automotive gauge package
+
+    Task: HyperCars Inc. needs a software solution for the gauges in their latest hyper car, the VenronX. 
+    The software does not need to implement the graphics for the gauges, but rather only the behavior.
+
+    They expect to have the following gauges:
+
+ 1) Speedometer, indicating a minimum and maximum value
+ 2) Tachometer, indicating a minimum and maximum value, as well as a suggested "do not exceed" value ("redline")
+ 3) Oil pressure, min/max that must throw an exception if the maximum value is achieved (warns engine software to shut down)
+ 4) Ammeter, max value only (min value should be assumed to be zero)
+ 5) Accelerometer, zero to max, with highest level reached stored for later analysis
+ 
+  If you know UML, let's use that. If you don't know UML, just draw some pictures and we'll use those (but consider learning UML!).
+
+  Goal: Show how you would design classes. There isn't a right or wrong answer...some answers could be considered more effective than others, but none are wrong. 

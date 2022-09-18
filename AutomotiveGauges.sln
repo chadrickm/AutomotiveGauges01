@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomotiveGauges", "AutomotiveGauges\AutomotiveGauges.csproj", "{1B547088-6605-4B58-B0D0-DD074C3B115E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTests", "MSTests\MSTests.csproj", "{D4A0DE3A-61D1-48B0-902B-A735F9842D6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B547088-6605-4B58-B0D0-DD074C3B115E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B547088-6605-4B58-B0D0-DD074C3B115E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B547088-6605-4B58-B0D0-DD074C3B115E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B547088-6605-4B58-B0D0-DD074C3B115E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A0DE3A-61D1-48B0-902B-A735F9842D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A0DE3A-61D1-48B0-902B-A735F9842D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A0DE3A-61D1-48B0-902B-A735F9842D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A0DE3A-61D1-48B0-902B-A735F9842D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
